@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-left.css' rel='stylesheet'>
+	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-right.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+	<link rel="icon" href="../img/LOGO-DKN-VER2.png" type="image/png" sizes="16x16">
+	<script src="./main.js"></script>
+</head>
+
+<body>
+	<div class="sidebar">
+		<div class="logo-details">
+			<div class="logo-img">
+				<img src="../img/LOGO-DKN-VER2.png" alt="" width="20px" height="20px"
+					style="position: relative; margin-right: 20px; z-index: -99999">
+			</div>
+			<div class="logo_name">DUONGKENH</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav-list">
+			<li>
+				<i class='bx bx-search'></i>
+				<input type="text" placeholder="Search...">
+				<span class="tooltip">Search</span>
+			</li>
+			<li>
+				<a href="../index.php">
+					<i class='bx bx-home-alt'></i>
+					<span class="links_name">Trang chủ</span>
+				</a>
+				<span class="tooltip">Trang chủ</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-user'></i>
+					<span class="links_name">Bạn bè</span>
+				</a>
+				<span class="tooltip">Bạn bè</span>
+			</li>
+			<li>
+				<a href="../vn-room-chat/login.php">
+					<i class='bx bx-chat'></i>
+					<span class="links_name">Chat Box</span>
+				</a>
+				<span class="tooltip">Chat Box</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-spa'></i>
+					<span class="links_name">Du lịch</span>
+				</a>
+				<span class="tooltip">Du lịch</span>
+			</li>
+			<li class="profile">
+				<div class="profile-details">
+					<i class='bx bx-export'></i>
+					<div class="name_job">
+						<div class="name"><a href="./logout.php" class="logout-link">Logout</a></div>
+					</div>
+				</div>
+				<i class='bx bx-log-out' id="log_out"></i>
+			</li>
+		</ul>
+	</div>
+	<section class="main-container .section">
+		<div class="tab-nav-bar">
+			<div class="tab-nav">
+				<i class="gg-chevron-left left-btn"></i>
+				<ul class="tab-menu">
+					<li class="tab-btn active">Tokyo</li>
+					<li class="tab-btn">Cairo</li>
+					<li class="tab-btn">Rome</li>
+					<li class="tab-btn">Paris</li>
+					<li class="tab-btn">Mexico City</li>
+					<li class="tab-btn">Ha Noi</li>
+					<li class="tab-btn">Floren</li>
+					<li class="tab-btn">New York</li>
+					<li class="tab-btn">Moscow</li>
+					<li class="tab-btn">Sydney</li>
+					<li class="tab-btn">Amsterdam</li>
+				</ul>
+				<i class="gg-chevron-right right-btn"></i>
+			</div>
+		</div>
+		<div class="tab-content">
+			<!-- TOKYO -->
+			<div class="tab active">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/tokyo.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Tokyo</h2>
+							<div class="description">
+								<p>
+									Tokyo is a bustling metropolis that serves as Japan's capital and is one of the most
+									populous cities in the world. Known
+									for its vibrant culture, cutting-edge technology, and rich history, Tokyo offers a
+									unique blend of tradition and
+									modernity.
+								</p>
+								<p>
+									Overall, Tokyo is a dynamic and vibrant city that offers a wealth of experiences for
+									travelers seeking to immerse
+									themselves in the heart of Japan's culture and innovation.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Japan</h1>
+			</div>
+			<!-- CAIRO -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/cairo.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Cairo</h2>
+							<div class="description">
+								<p>
+									Cairo, the capital city of Egypt, is a captivating blend of ancient wonders, vibrant
+									culture, and bustling modernity.
+									Situated along the banks of the Nile River, Cairo is one of the oldest cities in the
+									world, with a history that spans
+									over millennia.
+								</p>
+								<p>
+									Cairo's chaotic streets can be overwhelming at times, but they're also part of the
+									city's charm. Whether you're
+									exploring its ancient wonders, savoring its culinary delights, or simply soaking up
+									the bustling atmosphere, Cairo is a
+									city that never fails to captivate and inspire.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Egypt</h1>
+			</div>
+			<!-- ROME -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/rome.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Rome</h2>
+							<div class="description">
+								<p>
+									Rome, the Eternal City, is a captivating blend of ancient history, awe-inspiring
+									architecture, and vibrant culture. As
+									the capital of Italy, Rome stands as a living testament to over two millennia of
+									civilization, serving as a bridge
+									between the past and the present.
+								</p>
+								<p>
+									The Vatican City, an independent city-state within Rome, is home to some of the
+									world's most revered religious and
+									artistic treasures. St. Peter's Basilica, with its magnificent dome designed by
+									Michelangelo, and the Vatican Museums,
+									housing masterpieces such as the Sistine Chapel ceiling, are must-visit destinations
+									for art and history enthusiasts.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Italy</h1>
+			</div>
+			<!-- PARIS -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/paris.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Paris</h2>
+							<div class="description">
+								<p>
+									Paris, often referred to as the "City of Light" or the "City of Love," is a timeless
+									symbol of elegance, romance, and
+									culture. As the capital of France, Paris is celebrated for its iconic landmarks,
+									rich history, world-class art, and
+									gastronomic delights.
+								</p>
+								<p>
+									Despite its timeless charm, Paris is a dynamic and modern city, with innovative
+									architecture, vibrant street art, and a
+									thriving nightlife scene. From haute couture fashion houses to avant-garde
+									galleries, Paris continues to inspire and
+									captivate visitors from around the world with its incomparable blend of beauty,
+									sophistication, and joie de vivre.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">France</h1>
+			</div>
+			<!-- MEXICO -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/mexico.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Mexico City</h2>
+							<div class="description">
+								<p>
+									Mexico City, the vibrant capital of Mexico, is a sprawling metropolis that pulsates
+									with energy, culture, and history.
+									Situated in the heart of the country, it is one of the largest cities in the world,
+									teeming with life and offering a
+									rich tapestry of experiences for visitors.
+								</p>
+								<p>
+									Mexico City's culinary scene is legendary, with its street food stalls, markets, and
+									restaurants offering a tantalizing
+									array of flavors and dishes. From tacos al pastor and tamales to mole and
+									chilaquiles, the city's cuisine reflects its
+									rich culinary heritage and diverse regional influences.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Mexico</h1>
+			</div>
+			<!-- HA NOI -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/hanoi.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Ha Noi City</h2>
+							<div class="description">
+								<p>
+									Hanoi, the capital city of Vietnam, is a captivating blend of ancient charm and
+									bustling modernity. Situated in the
+									northern part of the country, Hanoi is known for its rich history, vibrant culture,
+									and scenic beauty.
+								</p>
+								<p>
+									Hanoi's cultural heritage is evident in its many historic landmarks, including the
+									iconic Hoan Kiem Lake and its
+									picturesque red bridge leading to Ngoc Son Temple. The Temple of Literature,
+									Vietnam's first university, is a testament
+									to the country's reverence for education and scholarship, while the imposing Ho Chi
+									Minh Mausoleum honors the revered
+									leader of modern Vietnam.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Viet Nam</h1>
+			</div>
+			<!-- FLOREN -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/floren.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Floren</h2>
+							<div class="description">
+								<p>
+									Florence, known as Firenze in Italian, is a captivating city in the heart of
+									Tuscany, Italy. Renowned as the birthplace
+									of the Renaissance, Florence is celebrated for its unparalleled artistic heritage,
+									architectural masterpieces, and rich
+									cultural legacy.
+								</p>
+								<p>
+									Despite its rich history, Florence is also a modern and vibrant city, with trendy
+									boutiques, contemporary art galleries,
+									and lively street markets. Whether you're exploring its iconic landmarks, indulging
+									in its culinary delights, or simply
+									soaking up its timeless beauty, Florence is a city that never fails to enchant and
+									inspire.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Italy</h1>
+			</div>
+			<!-- NEW YORK -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/newyork.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">New York</h2>
+							<div class="description">
+								<p>
+									New York City, often referred to simply as NYC or the Big Apple, is a vibrant and
+									iconic metropolis located in the
+									northeastern United States. As one of the most populous cities in the world, New
+									York is a cultural melting pot,
+									renowned for its diversity, energy, and endless array of attractions.
+								</p>
+								<p>
+									Central Park, a sprawling oasis of green in the midst of the urban jungle, offers
+									respite from the hustle and bustle of
+									the city streets. Here, visitors can stroll along winding pathways, picnic on lush
+									lawns, or rent a boat to paddle
+									across the serene waters of the park's lakes.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">United States</h1>
+			</div>
+			<!-- MOSCOW -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/moscow.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Moscow</h2>
+							<div class="description">
+								<p>
+									Moscow, the capital city of Russia, is a dynamic metropolis steeped in history,
+									culture, and grandeur. Situated along
+									the banks of the Moskva River, Moscow serves as the political, economic, and
+									cultural heart of the country, boasting a
+									rich architectural heritage and a thriving contemporary scene.
+								</p>
+								<p>
+									Whether you're exploring its historic landmarks, immersing yourself in its cultural
+									riches, or simply enjoying its
+									vibrant street life, Moscow is a city that captivates the imagination and leaves a
+									lasting impression on all who visit.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Russia</h1>
+			</div>
+			<!-- SYDNEY -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/sydney.jpg" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Sydney</h2>
+							<div class="description">
+								<p>
+									Sydney's coastal landscape is dotted with world-famous beaches, including Bondi
+									Beach, where surfers ride the waves and
+									sunseekers bask in the sun. Manly Beach, with its scenic coastal walk and lively
+									promenade, is another popular
+									destination for beachgoers and outdoor enthusiasts.
+								</p>
+								<p>
+									Sydney's cultural calendar is packed with events, festivals, and performances
+									year-round, from world-class theater
+									productions at the Sydney Opera House to outdoor concerts and art exhibitions in
+									parks and public spaces.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Australia</h1>
+			</div>
+			<!-- AMSTERDAM -->
+			<div class="tab">
+				<div class="row">
+					<div class="left-column">
+						<div class="img-card">
+							<img src="./img/amsterdam.png" alt="">
+						</div>
+					</div>
+					<div class="right-column">
+						<div class="info">
+							<h2 class="city">Amsterdam</h2>
+							<div class="description">
+								<p>
+									Amsterdam, the capital city of the Netherlands, is a charming and picturesque
+									metropolis renowned for its rich history,
+									vibrant culture, and scenic canals. Situated in the heart of the country, Amsterdam
+									is a city of contrasts, where
+									historic architecture coexists with modern innovation, and a relaxed atmosphere
+									blends seamlessly with dynamic urban
+									life.
+								</p>
+								<p>
+									At the center of Amsterdam lies its iconic canal belt, a UNESCO World Heritage Site
+									comprising a network of picturesque
+									waterways lined with elegant townhouses, quaint bridges, and tree-lined streets.
+									Exploring the city's canals by boat or
+									on foot offers a unique perspective on its beauty and charm, with landmarks like the
+									Anne Frank House, the Rijksmuseum,
+									and the Van Gogh Museum dotting the waterfront.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="country">Netherlands</h1>
+			</div>
+		</div>
+	</section>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var logoutButton = document.querySelector(".bx-log-out");
+			if (logoutButton) {
+				logoutButton.addEventListener("click", function () {
+					window.location.href = "./logout.php";
+				});
+			}
+		});
+
+		let sidebar = document.querySelector(".sidebar");
+		let closeBtn = document.querySelector("#btn");
+		let searchBtn = document.querySelector(".bx-search");
+
+		closeBtn.addEventListener("click", () => {
+			sidebar.classList.toggle("open");
+			menuBtnChange();
+		});
+
+		searchBtn.addEventListener("click", () => {
+			sidebar.classList.toggle("open");
+			menuBtnChange();
+		});
+
+		function menuBtnChange() {
+			if (sidebar.classList.contains("open")) {
+				closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+			} else {
+				closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+			}
+		}
+	</script>
+</body>
+
+</html>

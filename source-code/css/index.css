@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(217deg, #80cdfb, rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, #ffaad7, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, #ffa7b4, rgba(0, 0, 255, 0) 70.71%);
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+img[src="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+    display: none;
+}
+
+
+/* Định dạng thanh cuộn dọc trên các trình duyệt khác */
+/* Nếu bạn muốn tùy chỉnh cho Firefox hoặc các trình duyệt khác */
+/* Bạn có thể thêm các lựa chọn tương ứng cho các thuộc tính */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* Canh các khối theo chiều dọc */
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Bo góc thành hình tròn */
+    overflow: hidden;
+    margin-right: 10px;
+    /* Khoảng cách giữa avatar và tiêu đề */
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    flex: 1;
+    /* Để nội dung mở rộng để lấp đầy phần còn lại của khối */
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn-container {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.btn {
+    /* CSS style cho nút */
+    /* Ví dụ: */
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+h2 {
+    align-items: center;
+}
+
+/* responsive */
+/* Responsive styles cho màn hình nhỏ (điện thoại) */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Canh giữa các khối .article theo trục cross-axis */
+    }
+
+    .article {
+        width: 90%;
+        /* Chiếm 90% chiều rộng của container, bạn có thể điều chỉnh theo ý muốn */
+        margin: 10px auto;
+        /* Thêm khoảng cách ở trên và dưới, và tự động cho lề trái và phải để canh giữa */
+        display: block;
+        /* Tiếp tục sử dụng display: block để hiển thị theo chiều dọc */
+
+    }
+
+    /* Điều chỉnh kích thước và cách sắp xếp của hình ảnh và nội dung trong mỗi .article nếu cần */
+    .article .avatar img {
+        width: 100%;
+        /* Ví dụ, làm cho hình ảnh chiếm toàn bộ chiều rộng */
+        height: auto;
+        /* Giữ tỷ lệ hình ảnh */
+        border-radius: 10px
+    }
+
+}

@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--first-color: #212226;
+	--second-color: #00539c;
+	--third-color: #f14666;
+	--forty-color: #9db898;
+	--textColor: #fff;
+	--box-shadow: 0 5px 25px rgba(2, 2, 2, 0.1);
+	--text-shadow: 0 5px 25px rgba(2, 2, 2, 0.1);
+}
+
+img[src="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+	display: none;
+}
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 78px;
+	background: #11101d;
+	padding: 6px 14px;
+	z-index: 99;
+	transition: all 0.5s ease;
+}
+
+.sidebar.open {
+	width: 250px;
+}
+
+.sidebar .logo-details {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.sidebar .logo-details .icon {
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.sidebar .logo-details .logo_name {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name {
+	opacity: 1;
+}
+
+.sidebar .logo-details #btn {
+	background-color: #11101d;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 22px;
+	transition: all 0.4s ease;
+	font-size: 23px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details #btn {
+	text-align: right;
+}
+
+.sidebar i {
+	color: #fff;
+	height: 60px;
+	min-width: 50px;
+	font-size: 28px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.sidebar .nav-list {
+	margin-top: 20px;
+	height: 100%;
+}
+
+.sidebar li {
+	position: relative;
+	margin: 8px 0;
+	list-style: none;
+}
+
+.sidebar li .tooltip {
+	position: absolute;
+	top: -20px;
+	left: calc(100% + 15px);
+	z-index: 3;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-size: 15px;
+	font-weight: 400;
+	opacity: 0;
+	white-space: nowrap;
+	pointer-events: none;
+	transition: 0s;
+}
+
+.sidebar li:hover .tooltip {
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 0.4s ease;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.sidebar.open li .tooltip {
+	display: none;
+}
+
+.sidebar input {
+	font-size: 15px;
+	color: #fff;
+	font-weight: 400;
+	outline: none;
+	height: 50px;
+	width: 100%;
+	width: 50px;
+	border: none;
+	border-radius: 12px;
+	transition: all 0.5s ease;
+	background: #1d1b31;
+}
+
+.sidebar.open input {
+	padding: 0 20px 0 50px;
+	width: 100%;
+}
+
+.sidebar .bx-search {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	font-size: 22px;
+	background: #1d1b31;
+	color: #fff;
+}
+
+.sidebar.open .bx-search:hover {
+	background: #1d1b31;
+	color: #fff;
+}
+
+.sidebar .bx-search:hover {
+	background: #fff;
+	color: #11101d;
+}
+
+.sidebar li a {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	border-radius: 12px;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	background: #11101d;
+}
+
+.sidebar li a:hover {
+	background: #fff;
+}
+
+.sidebar li a .links_name {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.4s;
+}
+
+.sidebar.open li a .links_name {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i {
+	transition: all 0.5s ease;
+	color: #11101d;
+}
+
+.sidebar li i {
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	border-radius: 12px;
+}
+
+.sidebar li.profile {
+	position: fixed;
+	height: 60px;
+	width: 78px;
+	left: 0;
+	bottom: -8px;
+	padding: 10px 14px;
+	background: #1d1b31;
+	transition: all 0.5s ease;
+	overflow: hidden;
+}
+
+.sidebar.open li.profile {
+	width: 250px;
+}
+
+.sidebar li .profile-details {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.sidebar li.profile .name,
+.sidebar li.profile .job {
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.sidebar li.profile .job {
+	font-size: 12px;
+}
+
+.sidebar .profile #log_out {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	background: #1d1b31;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 0px;
+	transition: all 0.5s ease;
+}
+
+.sidebar.open .profile #log_out {
+	width: 50px;
+	background: none;
+}
+
+.home-section {
+	position: relative;
+	background: #e4e9f7;
+	min-height: 100vh;
+	top: 0;
+	left: 78px;
+	width: calc(100% - 78px);
+	transition: all 0.5s ease;
+	z-index: 2;
+}
+
+.home-section .text {
+	display: inline-block;
+	color: #11101d;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 18px;
+}
+
+@media (max-width: 420px) {
+	.sidebar {
+		display: none;
+	}
+}
+
+.logout-link {
+	color: white;
+	background-color: #11101d;
+}
+
+.logout-link:hover {
+	background-color: #11101d;
+	cursor: pointer;
+}
+
+/* Tùy chỉnh thanh cuộn dọc */
+::-webkit-scrollbar {
+	width: 8px;
+	/* Độ rộng của thanh cuộn */
+	background-color: #f14666;
+	/* Màu nền của thanh cuộn */
+}
+
+/* Tùy chỉnh nút cuộn */
+::-webkit-scrollbar-thumb {
+	background-color: #37474F;
+	/* Màu của nút cuộn */
+	/* border-radius: 10px; */
+	/* Độ cong của nút cuộn */
+}
+
+/* Tùy chỉnh track (phần bên dưới của thanh cuộn) */
+::-webkit-scrollbar-track {
+	background-color: #ffffff;
+	/* Màu nền của track */
+}
+
+/* Tùy chỉnh thanh cuộn ngang */
+::-webkit-scrollbar {
+	height: 10px;
+	/* Chiều cao của thanh cuộn */
+}
+
+/* Màu nền của thanh cuộn */
+::-webkit-scrollbar-track {
+	background-color: #ffffff;
+	/* Màu nền */
+	/* border-radius: 10px; */
+	/* Độ cong của viền */
+}
+
+/* Màu của phần cuộn */
+::-webkit-scrollbar-thumb {
+	background-color: #37474F;
+	/* Màu của phần cuộn */
+	/* border-radius: 10px; */
+	/* Độ cong của viền */
+}
+
+body {
+	background-color: var(--first-color);
+}
+
+section {
+	position: relative;
+	margin: 0 80px;
+	transition: 0.5s ease;
+}
+
+
+.main-container {
+	position: relative;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* tab */
+
+.tab-menu {
+	color: var(--textColor);
+	list-style: none;
+	background-color: var(--third-color);
+	max-width: 800px;
+	padding: 10px;
+	white-space: nowrap;
+	border-bottom: 1px solid var(--third-color);
+	box-shadow: var(--box-shadow);
+	border-radius: 50px;
+	overflow-x: auto;
+	user-select: none;
+	scroll-behavior: smooth;
+	/* opacity: 80%; */
+}
+
+.tab-menu.dragging {
+	scroll-behavior: unset;
+	cursor: grab;
+}
+
+.tab-menu::-webkit-scrollbar {
+	display: none;
+}
+
+.tab-nav {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: fit-content;
+	margin: 0 auto;
+}
+
+.tab-nav-bar {
+	position: relative;
+	margin: 65px 10px 40px 10px;
+}
+
+.tab-btn {
+	color: var(--textColor);
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 12px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	user-select: none;
+	transition: 0.3s ease;
+}
+
+.tab-menu.dragging .tab-btn {
+	pointer-events: none;
+}
+
+
+.tab-btn:hover {
+	background-color: var(--second-color);
+}
+
+.tab-btn.active {
+	background: var(--second-color);
+}
+
+.left-btn,
+.right-btn {
+	position: absolute;
+	text-shadow: var(--text-shadow);
+	color: var(--text-shadow);
+	font-size: 1.8em;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+.left-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 23px;
+	/* background: linear-gradient(to left, transparent, var(--third-color) 80%); */
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	display: none;
+	color: white;
+}
+
+
+.right-btn {
+	right: 23px;
+	background: linear-gradient(to right, transparent, var(--third-color) 80%);
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 40px;
+	color: white;
+}
+
+/* Thanh cuộn dọc đẹp */
+.scrollable-container {
+	width: 300px;
+	/* Chiều rộng của thanh cuộn */
+	height: 200px;
+	/* Chiều cao của thanh cuộn */
+	overflow-y: auto;
+	/* Hiển thị thanh cuộn dọc khi nội dung vượt quá kích thước của container */
+}
+
+.content {
+	/* Phần này có thể chứa nội dung của bạn, với chiều rộng lớn hơn container để tạo ra thanh cuộn dọc */
+	width: 100%;
+	height: auto;
+}
+
+/* TAB Content */
+
+.tab-content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.tab {
+	/* position: relative; */
+	position: absolute;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	max-width: 1100px;
+	padding: 15px 50px;
+	transform: translateX(25px);
+	content-visibility: hidden;
+	opacity: 0;
+}
+
+
+.tab.active {
+	transform: translateX(0);
+	content-visibility: visible;
+	opacity: 1;
+	transition: 1s ease;
+}
+
+.tab .img-card {
+	position: relative;
+	width: 450px;
+	max-width: 450px;
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: var(--box-shadow);
+}
+
+.tab .img-card img {
+	width: 100%;
+}
+
+.tab .row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+	gap: 30px;
+}
+
+.right-column {
+	max-width: 800px;
+}
+
+.info .city,
+.info .description p {
+	color: var(--textColor);
+	margin-bottom: 10px;
+}
+
+.info .city {
+	font-size: 2em;
+}
+
+.country {
+	color: var(--forty-color);
+	font-size: 5em;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: var(--text-shadow);
+	opacity: 50%;
+}
+
+/* Truy cap vao thiet bi khac va thay doi kich thuoc */
+
+@media screen and (max-width: 1050px) {
+	section {
+		margin: 0 0px;
+	}
+
+	.tab-nav-bar {
+		/* position: relative; */
+		margin: 65px 20px 40px 25px;
+	}
+
+	.tab {
+		padding: 15px 10px;
+	}
+
+	.tab .row {
+		margin: 5px 0;
+		flex-direction: column;
+	}
+
+	.tab .img-card {
+		width: auto;
+		max-width: 600px;
+	}
+
+	.country {
+		font-size: 10vw;
+		padding-bottom: 50px;
+	}
+
+}
