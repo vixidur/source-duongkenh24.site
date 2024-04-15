@@ -4,12 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="DUONGKENH24H.SITE">
+    <meta property="og:description" content="Nơi trao cho nhau những niềm tin đáng giá nhất ♥">
+    <meta property="og:image" content="https://i.imgur.com/HMFk4wK.jpeg">
+    <meta property="og:url" content="http://duongkenh24h.site/">
+    <meta property="og:type" content="Chat App">
+    <meta property="og:image"
+        content="https://nanoweb.vn/data/media/1/files/thiet-ke-website-chuan-seo-google-gia-re-nanoweb-1.png">
+    <title>DUONGKENH24H.SITE</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
-    <link rel="icon" href="../img/LOGO-DKN-VER2.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="./img/LOGO-DKN-VER2.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="./css/index.css">
     <style>
         * {
@@ -665,15 +673,6 @@
         </style>
     </section>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var logoutButton = document.querySelector(".bx-log-out");
-            if (logoutButton) {
-                logoutButton.addEventListener("click", function () {
-                    window.location.href = "./logout.php";
-                });
-            }
-        });
-
         let sidebar = document.querySelector(".sidebar");
         let closeBtn = document.querySelector("#btn");
         let searchBtn = document.querySelector(".bx-search");
