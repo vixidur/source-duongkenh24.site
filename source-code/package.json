@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "http-auth": "^4.2.0"
+  }
+}
